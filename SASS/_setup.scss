@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@300&display=swap');
+
+// Site-Colors
+$siteColorPurple:#9453A6;
+$siteColorGreen:#8CBF3F;
+$siteColorYellow:#F2CC0F;
+$siteColorGray:#F2F2F2;
+$siteColorBlack:#0D0D0D;
+
+// Site-Fonts
+$headerFont1:'Henny Penny';
+$headerFont2:'Pattaya';
+$textFont: 'Roboto';
+$navFontSize:2em;
+$footerIconSize:1.8em;
+$footerTextSize:1em;
+$footerHeaderSize:2.5em;
+$thankTextSize:5em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $siteColorGray;
+    font-family: $textFont;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}

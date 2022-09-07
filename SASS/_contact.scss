@@ -1,0 +1,93 @@
+
+.contactHeader{
+    font-size: 5rem;
+    font-family: $headerFont1;
+    text-align: center;
+    color: $siteColorGreen;
+    text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple;
+    margin-bottom: 50px;
+}
+
+.forme{
+    background-color: $siteColorYellow;
+    padding: 50px;
+    border: 5px solid $siteColorPurple;
+    font-size: 1.3em;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+
+.forme fieldset legend{
+    margin-bottom: 50px;
+    // color: $siteColorPurple;
+    text-align: center;
+    font-family: $headerFont2;
+    font-size: 1.5em;
+    color: $siteColorGreen;
+    text-shadow: -2px 2px 0 $siteColorPurple, 2px 2px 0 $siteColorPurple, 2px -2px 0 $siteColorPurple, -2px -2px 0 $siteColorPurple;
+}
+
+.wrapContRow{
+    align-items: center;
+    margin-top: 40px;
+}
+
+.form-control-label{
+    color: $siteColorPurple;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    border: 2px solid $siteColorPurple;
+}
+
+
+.wrapContRowDet{
+    margin-top: 40px;
+}
+
+.sendButtonForm{
+    margin-top: 50px;
+}
+#addDetail{
+    height: 200px;
+}
+
+.sendButtonForm{
+    background-color: $siteColorGreen;
+    font-size: 1.2em;
+    color: $siteColorPurple;
+    border: 2px solid $siteColorPurple;
+    font-family: $headerFont2;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+
+}
+
+.sendButtonForm:hover{
+    background-color: $siteColorPurple;
+    border: 2px solid $siteColorGray;
+
+
+
+}
+
+.error{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1em;
+    color: red;
+    justify-content: center;
+
+}
+
+@media (min-width:992px) {
+   .forme fieldset legend{
+    font-size: 2em;
+    }
+
+    .form-control-label{
+        margin-bottom: 0px;
+    }
+
+}

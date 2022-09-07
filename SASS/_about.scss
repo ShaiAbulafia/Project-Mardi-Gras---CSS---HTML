@@ -1,0 +1,225 @@
+.hiddenImageAbout{
+    display: none;
+}
+
+.wrapAboutSec1{
+    text-align: center;
+}
+.wrapAboutSec1 img{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 20px;
+    animation: boxAnimate1 1s linear 1s infinite alternate;
+}
+
+.wrapAboutSec2{
+    text-align: center;
+}
+.wrapAboutSec2 img{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 20px;
+    animation: boxAnimate1 1s linear 1s infinite alternate; 
+}
+.wrapAboutSec3{
+    text-align: center;
+}
+.wrapAboutSec3 img{
+    width: 50%;
+    margin-bottom: 20px;
+    border: 20px solid;
+    border-image-slice: 1;
+    border-width: 20px;
+
+    animation-name: boxAnimate1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;    
+}
+
+@keyframes boxAnimate1 {
+    from {
+        border-image-source: linear-gradient(to right, $siteColorGreen, $siteColorYellow, $siteColorPurple);
+    }
+
+    to {
+        border-image-source: linear-gradient(to right, $siteColorPurple,$siteColorGreen , $siteColorYellow);
+    }
+}
+
+.wrapCardText{
+    text-align: justify;
+    padding: 10px;
+}
+.aboutPic3{
+    margin-top: 20px;
+}
+
+.wrapAboutSec1 h1{
+    font-family: $headerFont2; 
+    color: $siteColorGreen;
+    text-shadow: -2px 2px 0 $siteColorPurple, 2px 2px 0 $siteColorPurple, 2px -2px 0 $siteColorPurple, -2px -2px 0 $siteColorPurple;
+}
+.wrapAboutSec2 h1{
+    font-family: $headerFont2; 
+    color: $siteColorGreen;
+    text-shadow: -2px 2px 0 $siteColorPurple, 2px 2px 0 $siteColorPurple, 2px -2px 0 $siteColorPurple, -2px -2px 0 $siteColorPurple;
+}
+.wrapAboutSec3 h1{
+   font-family: $headerFont2; 
+    color: $siteColorGreen;
+    text-shadow: -2px 2px 0 $siteColorPurple, 2px 2px 0 $siteColorPurple, 2px -2px 0 $siteColorPurple, -2px -2px 0 $siteColorPurple;
+}
+.wrapAboutSec1 p{
+color: $siteColorBlack;
+}
+.wrapAboutSec2 p{
+   color: $siteColorBlack;
+}
+.wrapAboutSec3 p{
+   color: $siteColorBlack;
+}
+
+.wrapCardText{
+    background-color: $siteColorYellow;
+    border: 5px solid $siteColorPurple;
+
+}
+
+.triviaHeader{
+    margin-top: 100px;
+    font-size: 5rem;
+    font-family: $headerFont1;
+    text-align: center;
+    color: $siteColorGreen;
+    background-color: $siteColorGray;
+    text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple;
+    margin-bottom: 50px;
+    border: 0px;
+}
+
+.triviaWindHead{
+    color: $siteColorYellow;
+    text-shadow: -1px 1px 0 $siteColorPurple, 1px 1px 0 $siteColorPurple, 1px -1px 0 $siteColorPurple, -1px -1px 0 $siteColorPurple;
+    font-family: $headerFont1;
+}
+.triviaBody{
+    text-align: center;
+}
+
+.triviaButton{
+    text-align: center;
+}
+.openTrivia{
+    font-size: 1.5em;
+    width: 200px;
+    background-color: $siteColorYellow;
+    border: 5px solid $siteColorPurple;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    color: $siteColorPurple;
+    font-family: $headerFont2;
+
+}
+.question{
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    color: $siteColorPurple;
+}
+.question-container button{
+    background-color: $siteColorYellow;
+    border: 5px solid $siteColorPurple;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    color: $siteColorPurple;
+    
+}
+.question-container button:hover{
+    background-color: $siteColorGreen;
+    border: 5px solid $siteColorYellow;
+    color: $siteColorYellow;
+}
+.question-container button:active{
+    background-color: $siteColorGreen;
+    border: 5px solid $siteColorYellow;
+    color: $siteColorYellow;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.wrapScore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scoreCount{
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+.score{
+    font-size: 1.3em;
+    color: $siteColorPurple;
+    margin: 20px;
+}
+
+.hiddenQuest{
+    display: none;
+}
+
+.shownQuest{
+    display: block;
+}
+
+
+@media (min-width:992px) {
+    .hiddenImageAbout{
+    display: block;
+    }
+
+    .wrapAboutSec1 img{
+    width: 25%;
+    margin-bottom: 0px;
+    position: absolute;
+}
+.wrapAboutSec2 img{
+    width: 25%;
+    margin-bottom: 0px;
+    position: absolute;
+}
+.wrapAboutSec3 img{
+    width: 25%;
+    margin-bottom: 0px;
+    position: absolute;
+}
+.aboutPic1{
+    transform: translateX(-20%) translateY(-5%) rotate(-10deg);
+    z-index: 2;
+}
+.aboutPic2{
+    transform: translateX(-35%) translateY(40%) rotate(10deg);
+    z-index: 3;
+}
+.aboutPic3{
+    margin-top: 0px;
+    transform: translateX(-20%) translateY(-5%) rotate(10deg);
+    z-index: 2;
+}
+.aboutPic4{
+    transform: translateX(-35%) translateY(40%) rotate(-10deg);
+    z-index: 3;
+}
+
+.wrapAboutSec1{
+    text-align: left;
+}
+.wrapAboutSec3{
+    text-align: left;
+}
+}

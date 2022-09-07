@@ -1,0 +1,77 @@
+.sponserSection {
+    background-color: $siteColorYellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 3px solid $siteColorPurple;
+    border-bottom: 3px solid $siteColorPurple;
+}
+
+.sponserSection h1 {
+    font-size: $footerHeaderSize;
+    font-family: $headerFont1;
+    
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: $thankTextSize;
+    color: $siteColorGreen;
+    text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple;
+
+}
+
+.sponser {
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.sponser img {
+    transition: all 0.5s;
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.sponser img:hover {
+    transform: scale(1.5);
+}
+
+.sponser img:active {
+    transform: scale(1.5);
+}
+
+.wrapSponsers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsBut1{
+    background-color: #fff;
+    // border: $siteColorYellow;
+    border:3px solid $siteColorPurple;
+
+}
+.sponsBut2{
+
+    border:3px solid $siteColorPurple;
+}
+
+.modal-body img{
+    width: 460px;
+}
+.modal-body p{
+    text-align: justify;
+}
+
+@media (min-width:992px) {
+    .wrapSponsers {
+        display: flex;
+    }
+
+    .thanks {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}

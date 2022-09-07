@@ -1,0 +1,184 @@
+
+// Carousel
+.hiddenCar{
+    display: none;
+}
+.headlineCarousel h1 {
+    font-size: $footerHeaderSize;
+    font-family: $headerFont1;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: $thankTextSize;
+    width: 70vw;
+    color: $siteColorGreen;
+    text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple;
+}
+
+
+.carousel-inner img{
+    border: 5px solid $siteColorPurple;
+}
+
+// image on mobile
+.hiddenImage img{
+    width: 100%;
+    margin-bottom: 100px;
+    border: 5px solid $siteColorPurple;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    background-color: $siteColorYellow;
+    padding: 10px;
+}
+
+// Info cards
+.wrapInfo{
+ justify-content: center;
+}
+
+.wrapInfoCont figure{
+    border: 5px solid $siteColorPurple;
+    border-radius: 10px 10px 10px 10px;
+    width: 60vw;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+.wrapInfoCont{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.wrapInfoCont img{
+    width: 100%;
+    height: 100%;
+    display: none;  
+}
+.wrapInfoCont h1{
+    font-family: $headerFont1;
+    font-size: 4em;
+    color: $siteColorGreen;
+    text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple;    
+}
+
+
+
+.wrapInfoCont figcaption{
+    text-align: justify;
+    padding: 10px;
+    background-color: $siteColorYellow;
+    color: $siteColorPurple;
+    font-size: 1.1em;
+}
+
+.wrapSiteHeader{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    background: url(../images/siteHeadlineImage.jpg) no-repeat center center;
+    background-size: cover;
+    border-top: 5px solid $siteColorPurple;
+    border-bottom: 5px solid $siteColorPurple;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+
+}
+
+.wrapSiteHeader h1{
+    padding: 50px;
+    text-align: center;
+    font-size: 5em;
+    font-family: $headerFont1;
+    color: $siteColorYellow;
+    text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple; 
+      
+    animation-name: siteHeadlineAnim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform: scale(1.2);    
+}
+
+
+@keyframes siteHeadlineAnim {
+    0% {
+        
+        color: $siteColorPurple;
+        transform: scale(0.8);
+        text-shadow: -3px 3px 0 $siteColorGray, 3px 3px 0 $siteColorGray, 3px -3px 0 $siteColorGray, -3px -3px 0 $siteColorGray; 
+
+    }
+    50%{
+        color: $siteColorGreen;
+        transform: scale(1);
+        text-shadow: -3px 3px 0 $siteColorGray, 3px 3px 0 $siteColorGray, 3px -3px 0 $siteColorGray, -3px -3px 0 $siteColorGray; 
+ 
+
+    }
+
+    100% {
+        color: $siteColorYellow;
+        transform: scale(1.2);
+        text-shadow: -3px 3px 0 $siteColorPurple, 3px 3px 0 $siteColorPurple, 3px -3px 0 $siteColorPurple, -3px -3px 0 $siteColorPurple;  
+    }
+}
+
+
+
+@media (min-width:992px) {
+    .hiddenCar{
+    display: block;
+    }
+    .hiddenImage{
+        display: none;
+    }
+    .wrapSiteHeader{
+        margin-top: 0px;
+    }
+    .wrapSiteHeader h1{
+        font-size: 8em;
+    }
+    .wrapInfoCont figure{
+    border: 5px solid $siteColorPurple;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+    }
+    .wrapInfoCont figcaption{
+    border: 5px solid $siteColorPurple;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+    margin-top: 30px;
+    transition: all 1s;
+    }
+
+    .wrapInfoCont img{
+    padding: 10px;
+    background-color: $siteColorYellow; 
+    display: block;
+    }
+    .wrapInfoCont{
+        width: 25%;
+        margin-top: 0px;
+        margin: 0px auto;
+    
+    }
+   
+    
+    .wrapCardHead{
+        height: 250px;
+        margin-bottom: 50px;
+    }
+
+
+    .wrapInfoCont figure:hover{
+        img{
+        opacity: 0.5;
+        }
+        figcaption {
+            position: relative;
+            top: -90%;
+            margin-top: 0px;
+        }
+   } 
+}
